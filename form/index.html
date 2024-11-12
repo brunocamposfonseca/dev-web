@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Gym Registration</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input class="input" type="text" name="name" id="name" required="required" autofocus>
+        <label for="email">Email:</label>
+        <input class="input" type="email" name="email" id="email" required placeholder="Exemple: email@email.com">
+        <label for="phone">Phone:</label>
+        <input class="input" type="tel" name="phone" id="phone" required>
+        <label for="datebirth">Date of birth:</label>
+        <input class="input" type="date" name="datebirth" id="datebirth" required>
+        
+        <label for="weight" class="measures">Weight:</label>
+        <input type="number" name="weight" id="weight" class="measures" required step="0.01">
+        <label for="height" class="measures pd">Height:</label>
+        <input type="number" name="height" id="height" class="measures" required step="0.01">
+        
+        <label for="photo">Photo:</label>
+        <input class="input" type="file" name="photo" id="photo" required>
+
+
+        <label>Plan:</label>
+        <input class="inline" type="radio" name="plan" id="weekly">
+        <label class="inline" for="weekly">weekly</label>
+        <input class="inline" type="radio" name="plan" id="monthly">
+        <label class="inline" for="monthly">monthly</label>
+        <input class="inline" type="radio" name="plan" id="yearly">
+        <label class="inline" for="yearly">yearly</label>
+
+
+        <label>Days of the week:</label>
+        <input class="inline" type="checkbox" name="plan" id="sunday">
+        <label class="inline" for="sunday">Sunday</label>
+        <input class="inline" type="checkbox" name="plan" id="monday">
+        <label class="inline" for="monday">Monday</label>
+        <input class="inline" type="checkbox" name="plan" id="tuesday">
+        <label class="inline" for="tuesday">Tuesday</label>
+        <input class="inline" type="checkbox" name="plan" id="wednesday">
+        <label class="inline" for="wednesday">Wednesday</label>
+        <input class="inline" type="checkbox" name="plan" id="thursday">
+        <label class="inline" for="thursday">Thursday</label>
+        <input class="inline" type="checkbox" name="plan" id="friday">
+        <label class="inline" for="friday">Friday</label>
+        <input class="inline" type="checkbox" name="plan" id="saturday">
+        <label class="inline" for="saturday">Saturday</label>
+
+        <label for="objectives">Main objectives of the trinos:</label>
+        <select name="objectives" id="objectives">
+            <option value="muscle-mass">Muscle mass gain</option>
+            <option value="cardiovascular">Improvement of cardiovascular health</option>
+            <option value="flexibility">Increased flexibility</option>
+            <option value="mental-health">Improvement of mental health</option>
+            <option value="others">Others</option>
+        </select>
+        <label for="additional-informations">Additional informations:</label>
+        <textarea name="additional-informations" id="additional-informations" rows="4" class="input" required placeholder="Enter a small text with additional informations"></textarea>
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <button type="button">Click here</button>
+    </form>
+</body>
+</html>

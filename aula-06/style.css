@@ -1,0 +1,54 @@
+h1 {
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+p {
+    font-size: 20px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowecase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.ident {
+    text-indent: 30px;
+}
+
+.shadow {
+    text-shadow: 1px 1px #ff0000;
+}
+
+.shadow-blur {
+    text-shadow: 1px 1px 2px #00ff00;
+}
+
+.overline {
+    text-decoration: overline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.overline-underline {
+    text-decoration: overline underline;
+}
+
+.overline-linethrough-underline {
+    text-decoration: overline line-through underline;
+}
