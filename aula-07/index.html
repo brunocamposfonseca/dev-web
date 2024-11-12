@@ -5,9 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+        *{
+            padding: none;
+            margin: none;
+        }
         body{
             background-image:url("images/mata.jpg");
             background-size: cover;
+            margin: 0;
+        }
+
+        .nav{
+            position: sticky;
+            display: flex;
+            top: 0;
+            padding: 20px 60px;
+            background-color: rgba(90, 59, 18, 0.9);
+            z-index: 10;
+            backdrop-filter: blur(4px);
+        }
+
+        .logo{
+            display: inline;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            color: #fff;
+            margin: 0;
+        }
+
+        .links{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            width: 100%;
+            text-align: end;
+        }
+
+        a{
+            color: #fff;
+            font-weight: 600;
+            font-size: 14px;
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:hover{
+            color: #efefef;
+            text-decoration: underline;
         }
 
         img{
@@ -25,21 +72,38 @@
             background-size: contain;
             
         } */
+        .context{
+            width: 100vw;
+            height: 100vh;
+        }
 
         .container{
-            height: 200px;
-            width: 600px;
-            border: 10px solid #fff;
-            border-radius: 30px;
-            background-image: url("images/capivara.jpg");
-            background-size: contain;
+            height: 70%;
+            width: 100%;
+            background-image: url("images/capivara2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center ;
+            background-attachment: fixed;
         }
+        
     </style>
 </head>
 <body>
-
-    <div class="container">
-        <img src="/images/instagram_icon.svg" alt="Logo do instagram">
+    <div class="nav">
+        <h1 class="logo">Capibharas</h1>
+        <div class="links">
+            <a href="#home">Home</a>
+        </div>
+    </div>
+    <div id="home">
+        <h1 style="width: 100%; text-align: center; font-family: 'Sour Gummy'; font-size: 50px;">Curiosidades sobre a Capivaras</h1>
+        <div align="center">
+            <video src="/images/capivara.mp4" poster="/images/capivara.jpg" muted controls height="720" width="auto" style="border-radius: 20px;margin-bottom: 40px;"></video>
+        </div>
+    </div>
+    <div class="context" align="center" id="about">
+        <div class="container"></div>
     </div>
 </body>
 </html>
