@@ -1,0 +1,4 @@
+Conteúdos aprendidos:
+
+- Display
+- Pseudoclasses
