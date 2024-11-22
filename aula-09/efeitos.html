@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body,html{
+            background: linear-gradient(90deg, #3498db, #9b59b6);
+            width: 100%;
+            height: 100%;
+        }
+
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, #ffffff, #b9e3ff);
+            border-radius: 10px;
+            transition: all 0.5s ease-in-out;
+            box-shadow: 2px 8px 8px rgba(255, 255, 255, 0.155);
+        }
+
+        h3{
+            font-family: Arial, Helvetica, sans-serif;
+            color: #3498db;
+        }
+
+        .scale:hover{
+            transform: scale(1.5);
+        }
+
+        .rotate:hover{
+            rotate: 45deg;
+        }
+
+        .translate:hover{
+            transform: translate(0px, 100px);
+        }
+
+        .border-radius:hover{
+            border-radius: 50%;
+        }
+
+        .opacity:hover{
+            opacity: 0.5;
+        }
+
+        .content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            height: 100%;
+            gap: 45px;
+        }
+
+        @keyframes animation{
+            0%{
+                transform: translate(0px, 0px);
+            }
+
+            50%{
+                transform: translate(0px, -50px);
+            }
+
+            75%{
+                transform: translate(0px, 50px);
+            }
+
+
+            100%{
+                transform: translate(0px, 0px);
+            }
+        }
+
+        .animation{
+            animation: animation 5s linear infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="box scale">
+            <h3>Scale</h3>
+        </div>
+        <div class="box rotate">
+            <h3>Rotate</h3>
+        </div>
+        <div class="box translate">
+            <h3>Translate</h3>
+        </div>
+        <div class="box border-radius">
+            <h3>Radius</h3>
+        </div>
+        <div class="box opacity">
+            <h3>Opacity</h3>
+        </div>
+        <div class="box animation">
+            <h3>Animation</h3>
+        </div>
+    </div>
+</body>
+</html>
