@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses</title>
+    <style>
+
+        h3{
+            margin: 0;
+            margin-bottom: 15px;
+        }
+
+        .button-hover{
+            width: 90px;
+            height: 22px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .button-hover:hover{
+            background-color: lightgreen;
+            width: 100px;
+            height: 100px;
+        }
+
+        .button-active:active{
+            transform: scale(1.5);
+        }
+
+        .input-focus:focus{
+            color: lightcoral;
+            background-color: aquamarine;
+        }
+        
+        .checkbox-checked:checked{
+            transform: scale(1.5);
+        }
+
+        .radio-checked:checked{
+            transform: scale(1.5);
+        }
+
+        a:link{
+            color: pink;
+        }
+
+        a:visited{
+            color: darkorchid;
+            text-decoration: none;
+        }
+
+        div{
+            width: 500px;
+            height: auto;
+            padding: 20px;
+            margin-block: 10px;
+            border-radius: 10px;
+            background-color: beige;
+        }
+
+        div:not(.nao-pertence){
+            background-color: rgb(216, 216, 216);
+        }
+
+        div:empty{
+            background-color: black;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Exemplo de Hover</h3>
+        <button class="button-hover">Clique aqui!</button>
+    </div>
+    <div>
+        <h3>Exemplo de Active</h3>
+        <button class="button-active">Clique aqui!</button>
+    </div>
+    <div>
+        <h3>Exemplo de Focus</h3>
+        <input class="input-focus" placeholder="clique em mim"/>
+    </div>
+    <div>
+        <h3>Exemplo de Checked</h3>
+        <label for="checkbox">Checkbox</label>
+        <input class="checkbox-checked" name="checkbox" type="checkbox"/>
+        <label for="radio">Radio</label>
+        <input class="radio-checked" name="radio" type="radio">
+    </div>
+    <div>
+        <h3>Exemplo de Pseudoclasses para link</h3>
+        <a href="#" class="link-1">Link 1</a>
+        <a href="#" class="link-2">Link 2</a>
+        <a href="#" class="link-3">Link 3</a>
+        <a href="#" class="link-4">Link 4</a>
+        <a href="#" class="link-5">Link 5</a>
+        <a href="#" class="link-6">Link 6</a>
+        <a href="#" class="link-7">Link 7</a>
+        <a href="#" class="link-8">Link 8</a>
+        <a href="#" class="link-9">Link 9</a>
+        <a href="#" class="link-10">Link 10</a>
+    </div>
+    <div class="nao-pertence">
+        <h3>Não pertence</h3>
+    </div>
+    <div></div>
+</body>
+</html>
