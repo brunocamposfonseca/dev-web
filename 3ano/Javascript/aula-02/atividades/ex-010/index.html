@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 010</title>
+</head>
+<body>
+   <h1>Calculadora</h1>
+   <label for="num1">1 Número</label>
+   <input type="number" id="num1">
+   <label for="num2">2 Número</label>
+   <input type="number" id="num2">
+   <label for="op"></label>
+   <select name="op" id="op">
+    <option value="+">Adição | +</option>
+    <option value="-">SUbtração | -</option>
+    <option value="/">Divisão | /</option>
+    <option value="*">Multiplicação | *</option>
+   </select>
+   <button onclick="cal()">Calcular</button>
+   <p id="res"></p>
+</body>
+<script src="script.js"></script>
+</html>
